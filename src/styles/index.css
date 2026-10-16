@@ -155,6 +155,76 @@ body {
   gap: 14px;
 }
 
+/* Author & Contact Top Strip */
+.author-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--zd-green);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-by {
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.author-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--zd-blue-deep);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.author-link:hover {
+  color: var(--zd-green);
+  text-decoration: underline;
+}
+
+.contact-divider {
+  color: var(--border-subtle);
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .author-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 /* Top Bar */
 .topbar {
   display: flex;

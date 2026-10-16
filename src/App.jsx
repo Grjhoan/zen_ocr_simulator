@@ -30,6 +30,7 @@ import {
   Globe,
   LayoutGrid,
   Workflow,
+  Linkedin,
 } from 'lucide-react';
 import {
   UI_STRINGS,
@@ -392,6 +393,42 @@ export default function App() {
 
   return (
     <div className="app-shell">
+      {/* AUTHOR & CONTACT HEADER */}
+      <div className="author-topbar" role="region" aria-label="Author and Contact Information">
+        <div className="author-info">
+          <span className="author-by">By Jhoan Zabala / PM &amp; PO / Zendesk Admin / Customer Experience</span>
+        </div>
+        <div className="author-contact">
+          <span className="contact-label">Contact me:</span>
+          <a href="mailto:jzabalacx@gmail.com" className="author-link" title="Email Jhoan Zabala">
+            <Mail size={13} aria-hidden="true" />
+            <span>jzabalacx@gmail.com</span>
+          </a>
+          <span className="contact-divider" aria-hidden="true">•</span>
+          <a
+            href="https://www.jhoanzabala.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="author-link"
+            title="Website"
+          >
+            <Globe size={13} aria-hidden="true" />
+            <span>www.jhoanzabala.com</span>
+          </a>
+          <span className="contact-divider" aria-hidden="true">•</span>
+          <a
+            href="https://www.linkedin.com/in/jhoanzabala/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="author-link"
+            title="LinkedIn Profile"
+          >
+            <Linkedin size={13} aria-hidden="true" />
+            <span>linkedin: https://www.linkedin.com/in/jhoanzabala/</span>
+          </a>
+        </div>
+      </div>
+
       {/* 1. TOP HEADER WITH VIEW SWITCHER, LANGUAGE SWITCHER & THEME SWITCHER */}
       <header className="topbar">
         <div className="brand-cluster">
